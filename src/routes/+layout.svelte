@@ -2,7 +2,7 @@
   import { writable, type Writable } from "svelte/store";
   import "../app.css";
   import { onMount, setContext } from "svelte";
-  import { Web3 } from "web3";
+  // import { Web3 } from "web3";
   import {
     defaultEvmStores as emv,
     web3,
@@ -15,9 +15,9 @@
   const provider: Writable<any> = writable();
   setContext("provider", provider);
   onMount(async () => {
-    const w3 = new Web3("https://bsc-dataseed.binance.org");
+    // const w3 = new Web3("https://bsc-dataseed.binance.org");
     // const contract = new w3.eth.Contract([], '')
-    provider.set(w3);
+    // provider.set(w3);
   });
 
 
